@@ -143,7 +143,7 @@ class LinearRegressor:
             loss_history.append(mse)
 
             #Calculate and print the loss every 10 epochs
-            if epoch % 100 == 0:
+            if epoch % 1000 == 0:
                 print(f"Epoch {epoch}: MSE = {mse}")
 
         return loss_history, np.array(w_history)
